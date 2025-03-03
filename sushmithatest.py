@@ -1,4 +1,3 @@
-
 urlpatterns = [
     path('',views.dashboard),
     path('signup',views.render_signup_page),
