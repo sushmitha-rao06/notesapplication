@@ -1,3 +1,5 @@
+
+//////////////notes views application //////////////
 from django.shortcuts import render, redirect
 from django.http import JsonResponse, HttpResponse, HttpResponseRedirect 
 from django.views.decorators.csrf import csrf_exempt
