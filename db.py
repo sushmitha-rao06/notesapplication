@@ -1,4 +1,5 @@
 import pyodbc  
+//notesapplication
 
 class NotesDB():
     def __init__(self, *args, **kwargs):
