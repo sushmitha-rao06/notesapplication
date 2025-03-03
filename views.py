@@ -114,3 +114,18 @@ def delete_notes(request):
         })
     
     return JsonResponse({"success" : True })
+
+
+
+@csrf_testcase
+def delete_notes(request):
+    id = request.POST.get('id')
+    response =  database.delete_notes_of_user(id)
+    if  not response :
+        return JsonResponse({
+            "success" : False,
+            "message" : f"Failed to delete data"
+        })
+    
+    return JsonResponse({"success" : True })
+
